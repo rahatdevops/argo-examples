@@ -1,11 +1,8 @@
 bases:
 - ../../base
 
- patchesStrategicMerge:
-  - path: ../replicas.yaml
-    target:
-      kind: Deployment
-      name: mywebapp
+patches:
+ - replicas.yaml
 
 configMapGenerator:
 - name: mykustom-map
