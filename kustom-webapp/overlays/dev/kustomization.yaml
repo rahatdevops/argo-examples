@@ -1,9 +1,6 @@
-bases:
+resources:
 - ../../base
 
-patches:
- - replicas.yaml
+namePrefix: dev-
+namespace: dev
 
-configMapGenerator:
-- name: mykustom-map
-  env: config.properties
